@@ -1,0 +1,33 @@
+# wechat-wenceafeng 品牌配置模板
+# 复制为 brand.yaml 并填入你的信息
+
+# ── 必填：品牌信息 ──
+brand:
+  name: "你的品牌名"
+  author: "你的作者名"
+
+# ── 必填：文章结尾联系方式 ──
+footer:
+  address: "你的地址"
+  phone: "你的电话"
+  email: "你的邮箱"
+
+# ── 可选：微信公众号 API（认证后填写，可启用 API 发布模式） ──
+wechat:
+  appid: ""
+  secret: ""
+
+# ── 可选：AI 生图 ──
+image:
+  provider: "seedream"
+  api_key: ""
+
+# ── 可选：目标受众策略 ──
+audience:
+  - { name: "受众A", strategy: "写作策略" }
+  - { name: "受众B", strategy: "写作策略" }
+  - { name: "受众C", strategy: "写作策略" }
+
+# ── 可选：风格对标 ──
+# 填入你想学习的公众号名称，故事/人物类文章会自动对标
+style_references: []
