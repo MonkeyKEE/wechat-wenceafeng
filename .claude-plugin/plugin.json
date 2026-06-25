@@ -1,0 +1,13 @@
+{
+  "name": "wechat-wenceafeng",
+  "version": "1.0.0",
+  "description": "云麓智联公众号全自动四阶段流水线：WeWrite写作+SEO → Humanizer-zh去AI腔 → guizang卡片配图 → baoyu信息图+排版+发布草稿箱",
+  "author": "云麓智联",
+  "skills": [
+    "./"
+  ],
+  "metadata": {
+    "category": "content-creation",
+    "tags": ["公众号", "wechat", "非遗", "排版", "配图", "自动化"]
+  }
+}
