@@ -1,7 +1,7 @@
 ---
 name: wechat-wenceafeng
-description: 通用公众号全自动四阶段流水线——WeWrite写作→Humanizer去AI→卡片配图→生图排版发布草稿箱。只需配置品牌信息和API密钥即可使用。说"写一篇公众号文章"触发。
-version: 2.0.0
+description: 通用公众号全自动三阶段流水线——WeWrite写作→Humanizer去AI→baoyu排版发布草稿箱。配图由用户手动完成。只需配置品牌信息即可使用。说"写一篇公众号文章"触发。
+version: 3.0.0
 allowed-tools:
   - Bash
   - Read
@@ -13,7 +13,7 @@ allowed-tools:
   - WebFetch
 ---
 
-# 公众号全自动四阶段流水线
+# 公众号全自动三阶段流水线
 
 ## 快速开始
 
@@ -21,16 +21,17 @@ allowed-tools:
 npx skills add MonkeyKEE/wechat-wenceafeng
 ```
 
-然后在本项目创建 `brand.yaml`，填入你的品牌信息（见下方模板）。配置完成后说"写一篇公众号文章"即可触发全流程。
+然后在本项目创建 `brand.yaml`，填入你的品牌信息。配置完成后说"写一篇公众号文章"即可触发全流程。
 
-## 四阶段流水线
+## 三阶段流水线
 
 ```
 ① WeWrite       → 热点→选题→框架→写作→SEO  → .md
 ② Humanizer-zh  → 去AI腔调                    → .md
-③ guizang-card  → 卡片配图                    → PNG
-④ baoyu         → WebSearch生图→插入→发布     → 草稿箱
+③ baoyu         → 纯文本排版发布到草稿箱        → 草稿箱
 ```
+
+配图：不在流水线中自动生成。发布后用户在草稿箱中手动添加配图。
 
 ## 前置依赖
 
